@@ -20,7 +20,7 @@ public class UserDto implements UserDao{
     }
 
     @Override
-    public int getEmailCount(String email) {
+    public Integer getEmailCount(String email) {
         return 0;
     }
 }

@@ -7,9 +7,10 @@ public interface UserDao {
 
     Integer createUser(String firstName, String lastName, String email, String password) throws EtAuthException;
 
-    User findById(Integer id);
-
     User FindByEmailAndPassword(String email, String password) throws EtAuthException;
 
-    int getEmailCount(String email);
+    User findById(Integer userId);
+
+
+    Integer getEmailCount(String email);
 }
